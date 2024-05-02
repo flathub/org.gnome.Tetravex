@@ -1,0 +1,88 @@
+From fe21a63986cfc19991a72b267c548fe18daad23c Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Thu, 2 May 2024 20:07:19 +0300
+Subject: [PATCH] appdata: Update appdata
+
+- Remove the none marked OARS
+- Add developer block
+- Update forwarded donation URL
+- Update forwarded screenshot URL
+- Add vcs-browser and translate URLs
+
+More information: https://docs.flathub.org/docs/for-app-authors/metainfo-guidelines/
+---
+ data/org.gnome.Tetravex.appdata.xml.in | 40 ++++++++--------------------------------
+ 1 file changed, 8 insertions(+), 32 deletions(-)
+
+diff --git a/data/org.gnome.Tetravex.appdata.xml.in b/data/org.gnome.Tetravex.appdata.xml.in
+index 03ae7ce..2ec6156 100644
+--- a/data/org.gnome.Tetravex.appdata.xml.in
++++ b/data/org.gnome.Tetravex.appdata.xml.in
+@@ -19,56 +19,32 @@
+   </description>
+   <screenshots>
+     <screenshot type="default" width="748" height="462">
+-      <image>https://people.gnome.org/~mcatanzaro/gnome-tetravex.png</image>
++      <image>https://static.gnome.org/appdata/mcatanzaro-old/gnome-tetravex.png</image>
+     </screenshot>
+   </screenshots>
+   <launchable type="desktop-id">org.gnome.Tetravex.desktop</launchable>
+   <url type="homepage">https://wiki.gnome.org/Apps/Tetravex</url>
+   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-tetravex/issues</url>
+-  <url type="donation">https://www.gnome.org/friends/</url>
++  <url type="donation">https://www.gnome.org/donate/</url>
+   <url type="help">https://help.gnome.org/users/gnome-tetravex/stable/</url>
++  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/gnome-tetravex</url>
++  <url type="translate">https://l10n.gnome.org/module/gnome-tetravex/</url>
+   <update_contact>mcatanzaro_at_gnome.org</update_contact>
+   <project_group>GNOME</project_group>
+   <developer_name>The GNOME Project</developer_name>
++  <developer id="org.gnome">
++    <name>The GNOME Project</name>
++  </developer>
+   <provides>
+     <id>gnome-tetravex.desktop</id>
+   </provides>
+   <kudos>
+     <kudo>HiDpiIcon</kudo>
+     <kudo>ModernToolkit</kudo>
+     <kudo>UserDocs</kudo>
+   </kudos>
+   <translation type="gettext">gnome-tetravex-gui</translation>
+-  <content_rating type="oars-1.1">
+-    <content_attribute id="violence-cartoon">none</content_attribute>
+-    <content_attribute id="violence-fantasy">none</content_attribute>
+-    <content_attribute id="violence-realistic">none</content_attribute>
+-    <content_attribute id="violence-bloodshed">none</content_attribute>
+-    <content_attribute id="violence-sexual">none</content_attribute>
+-    <content_attribute id="violence-desecration">none</content_attribute>
+-    <content_attribute id="violence-slavery">none</content_attribute>
+-    <content_attribute id="violence-worship">none</content_attribute>
+-    <content_attribute id="drugs-alcohol">none</content_attribute>
+-    <content_attribute id="drugs-narcotics">none</content_attribute>
+-    <content_attribute id="drugs-tobacco">none</content_attribute>
+-    <content_attribute id="sex-nudity">none</content_attribute>
+-    <content_attribute id="sex-themes">none</content_attribute>
+-    <content_attribute id="sex-homosexuality">none</content_attribute>
+-    <content_attribute id="sex-prostitution">none</content_attribute>
+-    <content_attribute id="sex-adultery">none</content_attribute>
+-    <content_attribute id="sex-appearance">none</content_attribute>
+-    <content_attribute id="language-profanity">none</content_attribute>
+-    <content_attribute id="language-humor">none</content_attribute>
+-    <content_attribute id="language-discrimination">none</content_attribute>
+-    <content_attribute id="social-chat">none</content_attribute>
+-    <content_attribute id="social-info">none</content_attribute>
+-    <content_attribute id="social-audio">none</content_attribute>
+-    <content_attribute id="social-location">none</content_attribute>
+-    <content_attribute id="social-contacts">none</content_attribute>
+-    <content_attribute id="money-purchasing">none</content_attribute>
+-    <content_attribute id="money-gambling">none</content_attribute>
+-  </content_rating>
+-
++  <content_rating type="oars-1.1" />
+   ​<releases>
+     <!-- should be kept in versioning inverted order -->
+     <release version="3.38.2" date="2020-11-22" type="stable" urgency="medium"/>
+--
+libgit2 1.7.2
+
