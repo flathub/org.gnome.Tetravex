@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Tetravex",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-tetravex",
     "finish-args": [
@@ -34,14 +34,6 @@
                         "name": "gnome-tetravex",
                         "stable-only": true
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "fix_build.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "fix_appdata.patch"
                 }
             ]
         }
