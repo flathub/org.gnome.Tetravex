@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Tetravex",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-tetravex",
     "finish-args": [
@@ -10,15 +10,7 @@
         "--socket=wayland"
     ],
     "cleanup": [
-        "/include",
-        "/lib/pkgconfig",
-        "/share/pkgconfig",
-        "/share/aclocal",
-        "/man",
-        "/share/man",
-        "/share/gtk-doc",
-        "*.la",
-        "*.a"
+        "/share/man"
     ],
     "modules": [
         {
